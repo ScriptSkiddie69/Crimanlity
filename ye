@@ -1,0 +1,266 @@
+game.Players.LocalPlayer.PlayerGui.ChildAdded:Connect(function()
+for i,v in pairs(game.Players.LocalPlayer.PlayerGui.LockpickGUI:GetDescendants()) do
+    if v.Name == "UIScale" then
+        v.Scale = 10
+    end
+    end
+
+end)
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "criminality shitty script", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Medium safe tp",
+	Callback = function()
+      		getgenv().ok = true
+
+for i,v in ipairs(game.Workspace.Map.BredMakurz:GetChildren()) do
+if v.Name:match('MediumSafe') and v.Values.Broken.Value == false then
+
+while getgenv().ok do wait()
+    
+spawn( function()
+wait(12)
+getgenv().ok = false
+end)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parts.Door.CFrame
+
+local args = {
+    [1] = "__--r",
+    [2] = game.Players.LocalPlayer.Character.HumanoidRootPart.Position,
+    [3] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+}
+
+game:GetService("ReplicatedStorage").Events.__DFfDD:FireServer(unpack(args))
+
+end
+   end
+end
+  	end    
+})
+Tab:AddButton({
+	Name = "Small safe tp",
+	Callback = function()
+      		getgenv().ok = true
+
+for i,v in ipairs(game.Workspace.Map.BredMakurz:GetChildren()) do
+if v.Name:match('SmallSafe') and v.Values.Broken.Value == false then
+
+while getgenv().ok do wait()
+    
+spawn( function()
+wait(12)
+getgenv().ok = false
+end)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parts.Door.CFrame
+
+local args = {
+    [1] = "__--r",
+    [2] = game.Players.LocalPlayer.Character.HumanoidRootPart.Position,
+    [3] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+}
+
+game:GetService("ReplicatedStorage").Events.__DFfDD:FireServer(unpack(args))
+
+end
+   end
+end
+  	end    
+})
+local amount = 0
+Tab:AddTextbox({
+	Name = "Deposit Amount",
+	Default = "500",
+	TextDisappear = true,
+	Callback = function(Value)
+		amount = Value
+	end	  
+})
+Tab:AddButton({
+	Name = "Deposit",
+	Callback = function()
+      		local deppart = workspace:WaitForChild('Map'):WaitForChild('ATMz'):WaitForChild('ATM'):WaitForChild('MainPart')
+getgenv().ok23 = true
+while getgenv().ok23 do wait()
+    
+spawn( function()
+wait(12)
+getgenv().ok23 = false
+end)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = deppart.CFrame
+
+local args = {
+    [1] = "__--r",
+    [2] = game.Players.LocalPlayer.Character.HumanoidRootPart.Position,
+    [3] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+}
+
+game:GetService("ReplicatedStorage").Events.__DFfDD:FireServer(unpack(args))
+
+end
+local args = {
+[1] = "DP",
+[2] = amount,
+[3] = deppart
+
+}
+game:GetService('ReplicatedStorage').Events.ATM:InvokeServer(unpack(args))
+  	end    
+})
+Tab:AddButton({
+	Name = "Scrap tp",
+	Callback = function()
+      		      		getgenv().ok2 = true
+
+for i,v in ipairs(game.Workspace.Filter.SpawnedPiles:GetChildren()) do
+if v.Name:match('S1') then
+
+while getgenv().ok2 do wait()
+    
+spawn( function()
+wait(12)
+getgenv().ok2 = false
+end)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.MeshPart.CFrame
+
+local args = {
+    [1] = "__--r",
+    [2] = game.Players.LocalPlayer.Character.HumanoidRootPart.Position,
+    [3] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+}
+
+game:GetService("ReplicatedStorage").Events.__DFfDD:FireServer(unpack(args))
+
+end
+   end
+end
+  	end    
+})
+Tab:AddButton({
+	Name = "Illegal dealer tp",
+	Callback = function()
+getgenv().ok23452 = true
+while getgenv().ok23452 do wait()
+    
+spawn( function()
+wait(12)
+getgenv().ok23452 = false
+end)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4285.02392578125, 4.061216831207275, 87.2237319946289)
+
+local args = {
+    [1] = "__--r",
+    [2] = game.Players.LocalPlayer.Character.HumanoidRootPart.Position,
+    [3] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+}
+
+game:GetService("ReplicatedStorage").Events.__DFfDD:FireServer(unpack(args))
+
+end
+  	end    
+})
+Tab:AddButton({
+	Name = "Illegal dealer2 tp",
+	Callback = function()
+getgenv().ok234526 = true
+while getgenv().ok234526 do wait()
+    
+spawn( function()
+wait(12)
+getgenv().ok234526 = false
+end)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4974.31787109375, 5.03291130065918, 3.8769524097442627)
+
+local args = {
+    [1] = "__--r",
+    [2] = game.Players.LocalPlayer.Character.HumanoidRootPart.Position,
+    [3] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+}
+
+game:GetService("ReplicatedStorage").Events.__DFfDD:FireServer(unpack(args))
+
+end
+  	end    
+})
+Tab:AddButton({
+	Name = "Hill tp",
+	Callback = function()
+getgenv().ok2346 = true
+while getgenv().ok2346 do wait()
+    
+spawn( function()
+wait(12)
+getgenv().ok2346 = false
+end)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5036.32568, 210.814728, -644.03064)
+
+local args = {
+    [1] = "__--r",
+    [2] = game.Players.LocalPlayer.Character.HumanoidRootPart.Position,
+    [3] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+}
+
+game:GetService("ReplicatedStorage").Events.__DFfDD:FireServer(unpack(args))
+
+end
+  	end    
+})
+Tab:AddButton({
+	Name = "Hill2 tp",
+	Callback = function()
+getgenv().ok23457 = true
+while getgenv().ok23457 do wait()
+    
+spawn( function()
+wait(12)
+getgenv().ok23457 = false
+end)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4227.84961, 212.385254, -830.865234)
+
+local args = {
+    [1] = "__--r",
+    [2] = game.Players.LocalPlayer.Character.HumanoidRootPart.Position,
+    [3] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+}
+
+game:GetService("ReplicatedStorage").Events.__DFfDD:FireServer(unpack(args))
+
+end
+  	end    
+})
+Tab:AddButton({
+	Name = "Vibecheck tp",
+	Callback = function()
+getgenv().ok234572 = true
+while getgenv().ok234572 do wait()
+    
+spawn( function()
+wait(12)
+getgenv().ok234572 = false
+end)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4843.33544921875, -200.74478149414062, -880.2208862304688)
+
+local args = {
+    [1] = "__--r",
+    [2] = game.Players.LocalPlayer.Character.HumanoidRootPart.Position,
+    [3] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+}
+
+game:GetService("ReplicatedStorage").Events.__DFfDD:FireServer(unpack(args))
+
+end
+  	end    
+})
